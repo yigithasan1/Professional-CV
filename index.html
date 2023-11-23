@@ -49,9 +49,85 @@
         <tr><td rowspan="2">E</td><td>F</td><td>G</td><td>H</td></tr>
         <tr><td>J</td><td>K</td><td>L</td></tr>
     </table>
+<hr>
+<hr>
+    <form action="post.php" method="post">
+        <b> Kullanıcı adı : </b> : <input type="text" name = "kullaniciadi" maxlength = "20" value ="Kullanıcı adınız..." autofocus>
+        <b>Sifre :</b> <input type="password" name = "sifre" maxlength= "20" placeholder = "Sifreniz..." autofocus>
+        <b>Dogum Gunu : </b> <input type="date" name = "dogumgunu"> 
     
-    
-    
-     
+<hr>
+<hr>
+    <b>TEXTAREA : </b> 
+    <textarea  name="text"  cols="30" rows="10"></textarea>
+<hr>
+<hr>
+    <b>PROGRAMLAMA DİLLERİ :</b> <br>
+    <input type="checkbox">C             <br>
+    <input type="checkbox">C++           <br>
+    <input type="checkbox">PYTHON        <br> 
+    <input type="checkbox">C#            <br> 
+    <input type="checkbox">JAVA          <br> 
+    <input type="checkbox" checked >HTML <br>  
+<hr>
+<hr>
+<b>TUTTUGUNUZ TAKIM : </b> <br>
+<input type="radio" name = "takim" value = "1" checked> Galataasaray  <br>
+<input type="radio" name = "takim" value = "1"> Fenerbahçe    <br>
+<input type="radio" name = "takim" value = "1"> Trabzonspor   <br>
+<input type="radio" name = "takim" value = "1"> Beişktaş      <br>
+<hr>
+<hr>
+    <b>BURCUNUZ : </b> <br>
+    <select name = "burc">
+        <option value="1" selected>BASAK</option>
+        <option value="2">BALIK</option>
+        <option value="3">ASLAN</option>
+        <option value="4">KOVA</option>
+    </select>
+<hr>
+<hr>
+    <b>Select : </b> <br>
+    <select>
+        <optgroup name ="diller" label="Programlama Dilleri">
+            <option value="1">C</option>
+            <option value="2">C++</option>
+            <option value="3">C#</option>
+        </optgroup>
+        <optgroup name = "marka" label="Markalar"> 
+            <option value="1">Nike</option>
+            <option value="2">Adidas</option>
+            <option value="3">Puma</option>
+        </optgroup>
+    </select>
+<hr>
+<hr>
+
+    <table border = "5" bgcolor = "purple">
+        <tr><td colspan="3">KULLANICI GİRİSİ</td></tr>
+        <tr><td colspan="3">Kullanıcı adı : <input type="text" name="kullnıcıadı" placeholder="Kullanıcı adınız..."></td></tr>
+        <tr><td colspan="3">Sifreniz :      <input type="password" name ="sifree" placeholder="Sifreniz..."></td></tr>
+        <tr><td colspan="3"><input align = "center" type="submit" value="GİRİS YAP"></td></tr>
+        <tr><td><input type="reset" name = "reset" value = "reset"></td></tr>
+    </table>
+</form>
+<hr>
+<hr>
+    <marquee id = "marq" behavior="alternate"><font color = "green" size = "15">KAYANZİ YAZI </font></marquee>
+    <input type="button" onclick="marq.stop()" value="Durdur">
+    <input type="button" onclick="marq.start()" value="BASLAT">
+<hr>
+<hr>
+    <div contenteditable="true">Tıklanabilir div tagi</div>
+<hr>
+<hr>
+    <div contenteditable="true">
+        <img src="bsm_cıkmayanlar.png" alt="bsm sınav konuları">
+    </div>
+<hr>
+<hr>
+    <video  controls width="400" height="200" >
+        <source src="./Image/lolvideo.mp4" type ="video/mp4">
+    </video>
 </body>
 </html>
